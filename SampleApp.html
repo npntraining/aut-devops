@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+function check()
+{
+	var checkBox = document.getElementById("agree");
+	var btn=document.getElementById('btn')
+	//btn.disabled=false;
+	
+	if (checkBox.checked == true){
+		btn.disabled=false;
+	}else{
+		btn.disabled=true;
+	}
+}
+</script>
+</head>
+<body>
+<div id="terms">
+U are bount to the law<br/>
+Be carefull before u aggreees
+</div>
+<input type="checkbox"  id="agree" onclick="check()" >I agree</input>
+<input type="button" id="btn" disabled="disabled" value="Next"/>
+</body>
+</html>
